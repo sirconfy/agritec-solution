@@ -1,0 +1,149 @@
+
+.navbar1-search-input input{
+    position: relative;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #097C0D;
+    width: 300px;
+}
+
+
+.navbar1-search-input {
+    position: relative;
+}
+
+.navbar-search-icon {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+    visibility: hidden;
+}
+
+
+.navbar1-search-button button{
+    padding: 0.4rem 0.6rem;
+    background-color: #D9D9D9;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.navbar-menulist {
+    display: flex;
+    gap: 2rem;
+    padding-top: 5px;
+}
+
+.navbar-menulist li {
+    color: #097c0d;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.navbar-menulist li:hover {
+    /* background-color: #097C0D; */
+    border: none;
+    outline: none;
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid #097C0D;
+    color: #0c220c;
+}
+
+
+
+
+/* *************MEDIA QUERIES (MEDIUM DEVICES) */
+
+@media screen and (max-width: 1024px) {
+
+    .navbar-menulist li {
+        color: #097c0d;
+        font-size: 1.1rem;
+        font-weight: 500;
+        cursor: pointer;
+        /* background-color: transparent; */
+    }    
+    
+    .navbar1-search-input {
+        position: absolute;
+        top: 45px;
+    }
+    
+    .navbar1-search-input input{
+        padding: 0.3rem 0.5rem;
+        border-radius: 5px;
+        border: 1px solid #097C0D;
+        width: 100px;
+        padding-left: 2rem;
+        
+    }
+
+    .navbar1-search-input input::placeholder {
+        font-size: 13px;
+    }
+    
+
+    .navbar-logo-resize {
+        /* width: 150px; */
+        margin: 0.9rem 0 0 0.9rem;
+    }
+
+    .navbar-logo-resize img {
+        width: 100%;
+    }
+
+    .navbar-search-icon {
+        position: absolute;
+        top: 0.58rem;
+        left: 0.7rem;
+        visibility: visible;
+        flex: 0 1 1;
+    }
+
+    .navbar1-search-button button{
+        visibility: hidden;
+        padding: 0.4rem 0.6rem;
+        background-color: #D9D9D9;
+        outline: none;
+        border: none;
+        border-radius: 3px;
+    }
+
+ 
+    .navbar-menulist {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #e6f2e7;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        transition: 1s;
+        transform: translateY(-100vh);
+    }
+
+    .responsive-nav {
+        transform: none;
+    }
+
+    .nav-close-btn {
+        position: absolute;
+        z-index: 99999;
+        color: white;
+        font-size: 2.8rem;
+        top: 29px;
+        right: 29px;
+    }
+}
+
+/* *************MEDIA QUERIES (SMALL DEVICE)*********** */
+
+@media  screen and (max-width: 600px) {
+    
+}
